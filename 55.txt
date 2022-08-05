@@ -1,0 +1,11 @@
+{
+ label = "Фейк",
+ tooltip = "Поддельный верстак",
+ shapes={
+  {0,15,0, 16,16,16, texture="crafting_table_top"},
+  {0,0,0,  16,15,1,  texture="crafting_table_side"},
+  {0,0,15, 16,15,16, texture="crafting_table_side"},
+  {0,0,1,  1,15,15,  texture="crafting_table_side"},
+  {15,0,1, 16,15,15, texture="crafting_table_side"}
+ }
+}

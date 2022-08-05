@@ -1,0 +1,11 @@
+local HPM_URL = "https://gist.githubusercontent.com/Fingercomp/61156a246367980316a20cb753f9391b/raw/625249bd5de9f16cb68c7a0dbb7e077b4930918e/hpm-da4cf7c0fa6c00772b335a58b30f48106634e644.lua"
+ 
+local fs = require("filesystem")
+if not fs.exists("/usr/bin/") then
+  fs.makeDirectory("/usr/bin/")
+end
+ 
+os.execute("hpm hel:remove -y hpm")
+ 
+os.execute("wget -qf " .. HPM_URL .. " /usr/bin/hpm.lua")
+os.execute("hpm hel:install -yf hpm")
